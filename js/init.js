@@ -430,27 +430,27 @@ function arlo_tm_jarallax(){
 // --------------------   SKILLS    --------------------
 // -----------------------------------------------------
 
-function tdProgress(container){
+function tdSkill(container){
 	
 	"use strict";
 		
-	container.find('.progress_inner').each(function() {
-		var progress 		= jQuery(this);
-		var pValue 			= parseInt(progress.data('value'), 10);
-		var pColor			= progress.data('color');
-		var pBarWrap 		= progress.find('.bar');
-		var pBar 			= progress.find('.bar_in');
+	container.find('.skill_inner').each(function() {
+		var skill 		= jQuery(this);
+		var pValue 			= parseInt(skill.data('value'), 10);
+		var pColor			= skill.data('color');
+		var pBarWrap 		= skill.find('.bar');
+		var pBar 			= skill.find('.bar_in');
 		pBar.css({width:pValue+'%', backgroundColor:pColor});
 		setTimeout(function(){pBarWrap.addClass('open');});
 	});
 }
 
-	jQuery('.arlo_progress').each(function() {
+	jQuery('.arlo_skill').each(function() {
 
 		"use strict";
 
 		var pWrap 			= jQuery(this);
-		pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
+		pWrap.waypoint({handler: function(){tdSkill(pWrap);},offset:'90%'});	
 	});
 
 // -------------------------------------------------

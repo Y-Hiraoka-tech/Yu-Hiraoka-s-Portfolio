@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&display=swap');
 /*
 /*	Copyright (c) 2019 Marketify
 /*	Author: Marketify
@@ -362,50 +363,9 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	clear: both;
 	float: left;
 	display: flex;
-	padding-top: 100px;
+	padding-top: 60px;
 }
-.arlo_tm_about .leftbox{
-	width: 35%;
-	float: left;
-	height: auto;
-}
-.arlo_tm_about .leftbox .about_image_wrap{position: relative;}
-.arlo_tm_about .leftbox .about_image_wrap .image{
-	position: absolute;
-	z-index: 2;
-}
-.arlo_tm_about .leftbox .about_image_wrap .image .inner{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.arlo_tm_about .leftbox .about_image_wrap .border .inner{
-	position: absolute;
-	top: 25px !important;
-	bottom: -25px !important;
-	left: 25px !important;
-	right: -25px !important;
-	border: 10px solid #000;
-}
-.arlo_tm_about .leftbox .about_image_wrap img{opacity: 0;}
-.arlo_tm_about .rightbox{
-	width: 65%;
-	height: auto;
-	padding-left: 70px;
-}
-.arlo_tm_about .rightbox .about_title{margin-bottom: 30px;}
-.arlo_tm_about .rightbox .about_title h3{font-size: 20px;}
-.arlo_tm_about .rightbox .about_title h3 .arlo_tm_animation_text_word{color: #ff214f;}
-.arlo_tm_about .rightbox .text{margin-bottom: 23px;}
-.arlo_tm_about .rightbox .text span{
-	color: #ff214f;
-	font-style: italic;
-}
+
 .arlo_tm_about .about_short_contact_wrap{
 	width: 100%;
 	height: auto;
@@ -420,8 +380,6 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .arlo_tm_about .about_short_contact_wrap ul li{
 	margin: 0px 0px 10px 0px;
-	width: 50%;
-	float: left;
 	position: relative;
 	padding-left: 30px;
 }
@@ -491,7 +449,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .arlo_tm_about .buttons ul li a:hover:before{width: 150%;}
 .arlo_tm_about .buttons ul li span{
-	z-index: 2;
+	z-index: 1;
 	position: relative;
 }
 .arlo_title_holder{
@@ -511,6 +469,166 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	text-transform: uppercase;
 	color: #ff214f;
 	font-weight: 500;
+}
+/*---------------------------------------------------*/
+/*	07) SWIM
+/*---------------------------------------------------*/
+
+#swim.arlo_tm_section{
+		background-image:url(..//img/img/home.jpg);
+		background-size: cover;
+}
+.favorite_word h2{
+	font-family: "Roboto";
+}
+.favorite_word h3 {
+	font-family: 'Courgette', cursive;
+}
+.swim-wrap{
+  padding: 10rem 0;
+  margin:1.5rem 0 0 1.5rem;
+}
+.swim-inner{
+  background:rgba(255,255,255,0.5);
+}
+/* 通常時はホバー時の文字を非表示にする */
+a .hover{
+	display: none;
+	}
+	
+	/* ホバー時は通常時の文字を非表示にする */
+a:hover .nomal{
+	display: none;
+	}
+	
+	/* ホバー時に、ホバー時の文字を表示する */
+a:hover .hover{
+	display: inline;
+	color: black;
+	}
+.swim_structure_inner{
+	width: 100%;
+	height: 150px;
+	background-color: rgba(0, 156,192, 0.4);
+	font: black;
+	border-radius: 50%;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------------------------*/
+/*	07) FEATURE
+/*---------------------------------------------------*/
+.feature-wrap{
+	padding: 10rem 0;
+}
+
+
+/*---------------------------------------------------*/
+/*	07) FAVORITE
+/*---------------------------------------------------*/
+
+.favorite-wrap{
+	
+}
+.favorite-inner{
+	float: left;
+}
+.favorite-inner .nav-item .ocean.active{
+	background-image: url(..//img/img/home.jpg);
+}
+.favorite-inner .nav-item .skill.active{
+	background-color: rgba(0,0,0,.8);
+	color: white;
+}
+
+/*  ocean  */
+
+.tab-content #ocean{
+	background-image: url(..//img/img/home.jpg);
+}
+.achievement-text{
+	padding: 6rem 0;
+}
+.tab-content #skill{
+	background-color: rgba(0,0,0,.8);
+	color: white;
+}
+/*  skill  */
+
+.arlo_tm_skill_wrap{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 50px 15px 26px 15px;
+	background-color: rgba(0,0,0,.8);
+}
+.arlo_tm_skill_wrap .skill_wrap_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+}
+.arlo_tm_skill_wrap .skill_wrap_inner .left{
+	width: 50%;
+	padding-right: 50px;
+}
+.arlo_tm_skill_wrap .skill_wrap_inner .left .main_title{
+	width: 100%;
+	margin-bottom: 29px;
+}
+.arlo_tm_skill_wrap .skill_wrap_inner .left .main_title h3{
+	font-size: 20px;
+	color: white;
+}
+.arlo_tm_skill_wrap .right{
+	width: 50%;
+	height: auto;
+	padding-left: 30px;
+}
+.arlo_skill{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin-bottom: 9px;
+}
+.skill_inner{
+	width:100%;
+	margin-bottom:14px;
+}
+.skill_inner > span{
+	margin:0px 0px 7px 0px;
+	width:100%;
+	display:block;
+	text-align:left;
+}
+.skill_inner span.number{float: right;}
+.skill_inner .background{
+	background:#07081f;
+	width:100%;
+	min-width:100%;
+	position:relative;
+	height:8px;
+}
+.skill_inner .background .bar_in{
+	height:100%;
+	background:#333;
+	width:0px;
+	overflow:hidden;
+}
+.skill_inner .background .bar{
+	width:0px;
+	height:100%;
+}
+.skill_inner .background .bar.open{
+	-webkit-animation: wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
+	-moz-animation:    wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
+	animation:         wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
+	width:100%;	
 }
 
 /*---------------------------------------------------*/
@@ -569,77 +687,6 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 .arlo_tm_services .service_inner ul li .inner h3{
 	font-size: 20px;
 	margin-bottom: 20px;
-}
-.arlo_tm_progress_wrap{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 93px 0px 26px 0px;
-}
-.arlo_tm_progress_wrap .progress_wrap_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	display: flex;
-}
-.arlo_tm_progress_wrap .progress_wrap_inner .left{
-	width: 50%;
-	padding-right: 50px;
-}
-.arlo_tm_progress_wrap .progress_wrap_inner .left .main_title{
-	width: 100%;
-	float: left;
-	margin-bottom: 29px;
-}
-.arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3{font-size: 20px;}
-.arlo_tm_progress_wrap .progress_wrap_inner .left .main_title h3 span{color: #ff214f;}
-.arlo_tm_progress_wrap .right{
-	width: 50%;
-	height: auto;
-	padding-left: 30px;
-}
-.arlo_progress{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 9px;
-}
-.progress_inner{
-	width:100%;
-	margin-bottom:14px;
-}
-.progress_inner > span{
-	margin:0px 0px 7px 0px;
-	width:100%;
-	display:block;
-	text-align:left;
-}
-.progress_inner span.number{float: right;}
-.progress_inner .background{
-	background:#07081f;
-	width:100%;
-	min-width:100%;
-	position:relative;
-	height:8px;
-}
-.progress_inner .background .bar_in{
-	height:100%;
-	background:#333;
-	width:0px;
-	overflow:hidden;
-}
-.progress_inner .background .bar{
-	width:0px;
-	height:100%;
-}
-.progress_inner .background .bar.open{
-	-webkit-animation: wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
-	-moz-animation:    wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
-	animation:         wow 3s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
-	width:100%;	
 }
 
 @-webkit-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
@@ -1461,10 +1508,10 @@ body.rtl .arlo_tm_about .about_short_contact_wrap ul li .svg{left: auto;right: 0
 body.rtl .arlo_tm_about .about_short_contact_wrap ul li:nth-of-type(2n){clear: left;}
 body.rtl .arlo_tm_about .buttons ul li{float: right;margin-right: 0px;margin-left: 15px;}
 body.rtl .arlo_tm_services .service_inner ul li{float: right;}
-body.rtl .arlo_tm_progress_wrap .right{padding-left: 0px;padding-right: 30px;}
-body.rtl .arlo_tm_progress_wrap .progress_wrap_inner .left{padding-left: 50px;padding-right: 0px;}
-body.rtl .progress_inner span.number{float: left;}
-body.rtl .progress_inner > span{text-align: right;}
+body.rtl .arlo_tm_skill_wrap .right{padding-left: 0px;padding-right: 30px;}
+body.rtl .arlo_tm_skill_wrap .skill_wrap_inner .left{padding-left: 50px;padding-right: 0px;}
+body.rtl .skill_inner span.number{float: left;}
+body.rtl .skill_inner > span{text-align: right;}
 body.rtl .arlo_tm_portfolio .portfolio_filter ul li{float: right;margin-right: 0px;margin-left: 30px;}
 body.rtl .arlo_tm_testimonial .testimonial_content .content_inner .icon{left: 0px;right: 51px;}
 body.rtl .arlo_tm_testimonial .testimonial_content .content_inner{padding: 60px 155px 64px 60px;}
@@ -1510,7 +1557,7 @@ body.dark .arlo_tm_about .buttons ul li a:hover{color: #000;}
 body.dark .arlo_tm_about .buttons ul li a:before{background-color: #fff;}
 body.dark .arlo_tm_services{background-color: #191919;}
 body.dark .arlo_tm_services .service_inner ul li .inner{background-color: #101010;box-shadow: 0px 0px 20px rgba(255,255,255,0);}
-body.dark .progress_inner .background{background-color: rgba(255,255,255,.2);}
+body.dark .skill_inner .background{background-color: rgba(255,255,255,.2);}
 body.dark .arlo_tm_portfolio .portfolio_filter ul li a{color: #fff;}
 body.dark .arlo_tm_portfolio .portfolio_filter ul li a.current{color: #ff214f;}
 body.dark .arlo_tm_timeline .timeline_inner .left ul:before{background-color: rgba(255,255,255,.2);}
@@ -1763,15 +1810,15 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	.arlo_tm_leftpart{display: none;}
 	.arlo_tm_rightpart{padding-left: 0px;}
 	.arlo_tm_topbar{display: block;}
-	.arlo_tm_progress_wrap .progress_wrap_inner{flex-direction: column;}
-	.arlo_tm_progress_wrap .progress_wrap_inner .left{padding-right: 0px;width: 100%;margin-bottom: 50px;}
-	.arlo_tm_progress_wrap .right{padding-left: 0px;width: 100%;}
+	.arlo_tm_skill_wrap .skill_wrap_inner{flex-direction: column;}
+	.arlo_tm_skill_wrap .skill_wrap_inner .left{padding-right: 0px;width: 100%;margin-bottom: 50px;}
+	.arlo_tm_skill_wrap .right{padding-left: 0px;width: 100%;}
 	.arlo_tm_testimonial .testimonial_bg .image{display: none;}
 	.arlo_tm_testimonial .testimonial_bg .overlay{background-color: #000;}
 	.arlo_tm_popup_news .closer{top: 10px;right: 10px;}
 	body.rtl .arlo_tm_rightpart{padding-right: 0px;}
-	body.rtl .arlo_tm_progress_wrap .progress_wrap_inner .left{padding-left: 0px;}
-	body.rtl .arlo_tm_progress_wrap .right{padding-right: 0px;}
+	body.rtl .arlo_tm_skill_wrap .skill_wrap_inner .left{padding-left: 0px;}
+	body.rtl .arlo_tm_skill_wrap .right{padding-right: 0px;}
 	.arlo_tm_preloader{display: none;}
 	.arlo_tm_portfolio_titles{display: none;}
 	.arlo_tm_intro_mainpart .main_list ul li{width: 50%;}
