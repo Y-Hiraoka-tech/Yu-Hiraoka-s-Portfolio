@@ -17,7 +17,7 @@
 09) ARLO TESTIMONIALS
 10) ARLO TIMELINE
 11) ARLO PRICING
-12) ARLO NEWS
+12) ARLO community
 13) ARLO CONTACT
 14) ARLO FOOTER
 15) ARLO TOTOP
@@ -529,9 +529,6 @@ a:hover .hover{
 /*	07) FAVORITE
 /*---------------------------------------------------*/
 
-.favorite-wrap{
-	
-}
 .favorite-inner{
 	float: left;
 }
@@ -541,6 +538,14 @@ a:hover .hover{
 .favorite-inner .nav-item .skill.active{
 	background-color: rgba(0,0,0,.8);
 	color: white;
+}
+.favorite-inner .nav-item .music.active{
+	background-color: #FEDCBD;
+	color: black;
+}
+.favorite-inner .nav-item .game.active{
+	background-color: darkgray;
+	color: black;
 }
 
 /*  ocean  */
@@ -631,453 +636,32 @@ a:hover .hover{
 	width:100%;	
 }
 
-/*---------------------------------------------------*/
-/*	07) ARLO SERVICES
-/*---------------------------------------------------*/
-
-.arlo_tm_services{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	background-color: #f9f9f9;
-	padding: 140px 0px 100px 0px;
+/* music */
+.music-wrap{
+	padding: 0 15px 26px 15px;
+	background-color: rgba(253,126,0,.8);
+	color: black;
 }
-.arlo_tm_services .service_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 90px;
-}
-.arlo_tm_services .service_inner ul{
-	margin: 0px 0px 0px -50px;
-	list-style-type: none;
-}
-.arlo_tm_services .service_inner ul li{
-	margin: 0px 0px 50px 0px;
-	float: left;
-	width: 33.3333%;
-	padding-left: 50px;
-}
-.arlo_tm_services .service_inner ul li .inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
-	padding: 40px 50px;
-	background-color: #fff;
-	top: 0px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.arlo_tm_services .service_inner ul li .inner:hover{top: -3px;}
-.arlo_tm_services .service_inner ul li .inner .svg{
-	width: 45px;
-	height: 45px;
-	color: #ff214f;
-	margin-bottom: 15px;
-}
-.arlo_tm_services .service_inner ul li .inner h3{
-	font-size: 20px;
-	margin-bottom: 20px;
-}
-
-@-webkit-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-@keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
-
-/*---------------------------------------------------*/
-/*	08) ARLO PORTFOLIO
-/*---------------------------------------------------*/
-
-.arlo_tm_portfolio{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 100px;
-	padding-top: 140px;
-}
-.arlo_tm_portfolio .portfolio_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 80px;
-}
-.arlo_tm_portfolio .portfolio_filter{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 20px;
-}
-.arlo_tm_portfolio .portfolio_filter ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.arlo_tm_portfolio .portfolio_filter ul li{
-	margin: 0px 30px 20px 0px;
-	display: inline-block;
-}
-.arlo_tm_portfolio .portfolio_filter ul li:last-child{margin-right: 0px;}
-.arlo_tm_portfolio .portfolio_filter ul li a{
-	text-decoration: none;
-	color: #000;
-}
-.arlo_tm_portfolio .portfolio_filter ul li a.current{color: #ff214f;}
-.arlo_tm_portfolio .portfolio_list{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.arlo_tm_portfolio .portfolio_list ul{
-	margin: 0px 0px 0px -50px;
-	list-style-type: none;
-}
-.arlo_tm_portfolio .portfolio_list ul li{
-	margin: 0px 0px 50px 0px;
-	float: left;
-	width: 33.3333%;
-	padding-left: 50px;
-}
-.arlo_tm_portfolio .portfolio_list ul li .inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-}
-.arlo_tm_portfolio .portfolio_list ul li .inner .main_image{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-.arlo_tm_portfolio_titles {
-	white-space: nowrap;
-	background: #ffffff;
-	font-size: 20px;
-	padding: 5px 15px;
-	font-family: "Montserrat";
-	font-weight: 500;
-	color: #000;
-	position: fixed;
-	z-index: 1000;
-	opacity: 0;
-	visibility: hidden;
-}
-.arlo_tm_portfolio_titles.visible {
-	opacity: 1;
-	visibility: visible;
-}
-.arlo_tm_portfolio_titles .work__cat {
-	position: absolute;
-	background: #ffffff;
-	top: 100%;
-	left: 0;
-	margin-top: -10px;
-	font-family: "Roboto";
-	font-size: 16px;
-	font-weight: 400;
-	padding: 5px 15px;
-}
-.entry{position: relative;}
-
-/*---------------------------------------------------*/
-/*	09) ARLO TESTIMONIALS
-/*---------------------------------------------------*/
-
-.arlo_tm_testimonial{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 140px;
-}
-.arlo_tm_testimonial .testimonial_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-}
-.arlo_tm_testimonial .testimonial_bg{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-}
-.arlo_tm_testimonial .testimonial_bg .image{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.arlo_tm_testimonial .testimonial_bg .overlay{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 1;
-	background-color: rgba(0,0,0,.85);
-}
-.arlo_tm_testimonial .testimonial_content{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	z-index: 2;
-	padding: 150px 20px 150px 20px;
-}
-.arlo_tm_testimonial .testimonial_content .content_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	border: 10px solid rgba(238,238,238,0.2);
-	padding: 60px 60px 64px 155px;
-}
-.arlo_tm_testimonial .testimonial_content .content_inner .icon{
-	position: absolute;
-	left: 51px;
-	top: 64px;
-	line-height: 0;
-}
-.arlo_tm_testimonial .testimonial_content .content_inner .icon .svg{
-	width: 70px;
-	height: 70px;
-	color: #FF5E5F;
-}
-.arlo_tm_testimonial .testimonial_content .content_inner .texts p{
-	color: #eee;
-	font-size: 18px;
-	font-weight: 300;
-	margin-bottom: 32px;
-}
-.arlo_tm_testimonial .testimonial_content .author{
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: flex;
-	align-items: center;
-}
-.arlo_tm_testimonial .testimonial_content .author .image{
-	width: 65px;
-	height: 65px;
-	border-radius: 100%;
-	position: relative;
-}
-.arlo_tm_testimonial .testimonial_content .author .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	border-radius: 100%;
-}
-.arlo_tm_testimonial .testimonial_content .author .job{padding-left: 25px;}
-.arlo_tm_testimonial .testimonial_content .author .job h3{
-	color: #fff;
-	font-size: 20px;
-}
-.arlo_tm_testimonial .testimonial_content .author .job span{color: #eee;}
-
-/*---------------------------------------------------*/
-/*	10) ARLO TIMELINE
-/*---------------------------------------------------*/
-
-.arlo_tm_timeline{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	margin-bottom: 140px;
-}
-.arlo_tm_timeline .timeline_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 80px;
-	display: flex;
-}
-.arlo_tm_timeline .timeline_inner .left,
-.arlo_tm_timeline .timeline_inner .right{
+.heroes{
 	width: 50%;
-	padding-right: 50px;
-}
-.arlo_tm_timeline .timeline_inner .left ul,
-.arlo_tm_timeline .timeline_inner .right ul{
-	margin: 0px;
-	width: 100%;
-	float: left;
-	list-style-type: none;
-	position: relative;
-}
-.arlo_tm_timeline .timeline_inner .left ul:before,
-.arlo_tm_timeline .timeline_inner .right ul:before{
-	position: absolute;
-	content: "";
-	width: 1px;
-	top: 11px;
-	bottom: 5px;
-	background-color: rgba(0,0,0,.2);
-	left: 0px;
-}
-.arlo_tm_timeline .timeline_inner .svg{
-	width: 30px;
-	height: 30px;
-	color: #ff214f;
-	position: absolute;
-	left: -55px;
-	top: -3px;
-}
-.arlo_tm_timeline .timeline_inner .left ul li,
-.arlo_tm_timeline .timeline_inner .right ul li{
-	width: 100%;
-	margin: 0px 0px 50px 0px;
-	float: left;
-	padding-left: 40px;
-}
-.arlo_tm_timeline .timeline_inner .left ul li:last-child{margin-bottom: 0px;}
-.arlo_tm_timeline .timeline_inner .right ul li:last-child{margin-bottom: 0px;}
-.arlo_tm_timeline .timeline_inner .left ul li .inner,
-.arlo_tm_timeline .timeline_inner .right ul li .inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-}
-.arlo_tm_timeline .timeline_inner .left ul li .inner .year,
-.arlo_tm_timeline .timeline_inner .right ul li .inner .year{margin-bottom: 20px;}
-.arlo_tm_timeline .timeline_inner .left ul li .inner .title,
-.arlo_tm_timeline .timeline_inner .right ul li .inner .title{
-	font-size: 20px;
-	margin-bottom: 20px;
 }
 
-/*---------------------------------------------------*/
-/*	11) ARLO PRICING
-/*---------------------------------------------------*/
+/*  Game */
+.game-inner{
+	background-color: darkgray;
+}
+.game-inner .title{
+	padding: 3rem 0;
+}
+.game-inner p{
+	color: black;
+}
 
-.arlo_tm_pricing{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	background-color: #f9f9f9;
-	padding: 140px 0px 100px 0px;
-}
-.arlo_tm_pricing .pricing_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding-top: 90px;
-	text-align: center;
-}
-.arlo_tm_pricing .pricing_inner > ul{
-	margin: 0px 0px 0px -50px;
-	list-style-type: none;
-}
-.arlo_tm_pricing .pricing_inner > ul > li{
-	margin: 0px 0px 50px 0px;
-	float: left;
-	width: 33.3333%;
-	padding-left: 50px;
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	position: relative;
-	padding: 40px 50px 50px 50px;
-	background-color: #fff;
-	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner .svg{
-	width: 45px;
-	height: 45px;
-	color: #ff214f;
-	margin-bottom: 10px;
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner .title{
-	font-size: 20px;
-	margin-bottom: 23px;
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner .price{
-	margin-bottom: 17px;
-	font-weight: 700;
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner ul{
-	margin: 0px;
-	list-style-type: none;
-	margin-bottom: 30px;
-}
-.arlo_tm_pricing .pricing_inner > ul > li > .inner ul li{margin: 0px;}
-.arlo_tm_pricing .pricing_inner > ul > li.active > .inner{background-color: #ff214f;}
-.arlo_tm_pricing .pricing_inner > ul > li.active > .inner .svg{color: #fff;}
-.arlo_tm_pricing .pricing_inner > ul > li.active > .inner .title{color: #fff;}
-.arlo_tm_pricing .pricing_inner > ul > li.active > .inner .price{color: #fff;}
-.arlo_tm_pricing .pricing_inner > ul > li.active > .inner ul li p{color: #eee;}
-.arlo_tm_pricing .pricing_inner > ul > li.active .arlo_tm_button a{
-	background-color: #fff;
-	color: #000;
-}
-.arlo_tm_button{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.arlo_tm_button a{
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	background-color: #ff214f;
-	padding: 7px 35px;
-	font-family: "Montserrat";
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.arlo_tm_button a:hover{box-shadow: 0px 0px 10px #ff214f;}
 
 /*---------------------------------------------------*/
-/*	12) ARLO NEWS
+/*	07) Community
 /*---------------------------------------------------*/
-
-.arlo_tm_news{
+.community-wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1085,24 +669,24 @@ a:hover .hover{
 	margin-bottom: 100px;
 	padding-top: 140px;
 }
-.arlo_tm_news .news_inner{
+.community-wrap .community_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding-top: 90px;
 }
-.arlo_tm_news .news_inner ul{
+.community-wrap .community_inner ul{
 	margin: 0px 0px 0px -50px;
 	list-style-type: none;
 }
-.arlo_tm_news .news_inner ul li{
+.community-wrap .community_inner ul li{
 	margin: 0px 0px 50px 0px;
 	float: left;
 	width: 33.3333%;
 	padding-left: 50px;
 }
-.arlo_tm_news .news_inner ul li .inner{
+.community-wrap .community_inner ul li .inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1110,50 +694,13 @@ a:hover .hover{
 	position: relative;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
-.arlo_tm_news .news_inner ul li .inner .image{
+.community-wrap .community_inner ul li .inner .image{
 	position: relative;
 	float: left;
+	overflow: hidden;
 }
-.arlo_tm_news .news_inner ul li .inner .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-.arlo_tm_news .news_inner ul li .inner .overlay{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-color: rgba(0,0,0,.15);
-	z-index: 1;
-}
-.arlo_tm_news .news_inner .larger{display: block;}
-.arlo_tm_news .news_inner .smaller{display: none;}
-.arlo_tm_news .news_inner ul li .inner .link{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 3;
-}
-.arlo_tm_news .news_inner ul li .inner .category{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	z-index: 2;
-	display: inline-block;
-	background-color: #ff214f;
-	color: #fff;
-	padding: 3px 15px;
-}
-.arlo_tm_news .news_inner ul li .inner .details{
+
+.community-wrap .community_inner ul li .inner .text{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1161,14 +708,15 @@ a:hover .hover{
 	background-color: #f9f9f9;
 	padding: 30px 50px 43px 50px;
 }
-.arlo_tm_news .news_inner ul li .inner .details .date{
+.community-wrap .community_inner ul li .inner .text .title{
 	width: 100%;
 	float: left;
 	position: relative;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
+	font-size: 20px;
 }
-.arlo_tm_news .news_inner ul li .inner .details .date:before{
+.community-wrap .community_inner ul li .inner .text .title:before{
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -1176,31 +724,20 @@ a:hover .hover{
 	background-color: rgba(0,0,0,.2);
 	bottom: 0px; 
 }
-.arlo_tm_news .news_inner ul li .inner .details .date a{
+.community-wrap .community_inner ul li .inner .text .title{
 	text-decoration: none;
 	color: #000;
 	border-bottom: 1px solid transparent;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
 }
-.arlo_tm_news .news_inner ul li .inner .details .date a:hover{border-bottom-color: #000;}
-.arlo_tm_news .news_inner ul li .inner .details .title{font-size: 20px;}
-.arlo_tm_news .news_inner ul li .inner .details .title a{
-	text-decoration: none;
-	color: #000;
-	display: inline-block;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+
+.inner .image img{
+  transition: all .15s;
 }
-.arlo_tm_news .news_inner ul li .inner .details .title a:hover{color: #ff214f;}
+.inner:hover .image img{
+  transform: scale(1.1);
+  transition: all .3 ease;
+	position: relative;
+}
 
 /*---------------------------------------------------*/
 /*	13) ARLO CONTACT
@@ -1369,8 +906,8 @@ a:hover .hover{
     left: 17px;
 	z-index: 2;
 }
-.arlo_tm_news .news_inner ul li .full_des{display: none;}
-.arlo_tm_popup_news{
+.community-wrap .community_inner ul li .full_des{display: none;}
+.arlo_tm_popup_community{
 	position: fixed;
 	width: 100%;
 	height: 100vh;
@@ -1378,15 +915,15 @@ a:hover .hover{
 	z-index: 100;
 	display: none;
 }
-.arlo_tm_popup_news .news_inner{
+.arlo_tm_popup_community .community_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding: 50px 0px;
 }
-.arlo_tm_popup_news.opened{display: block;}
-.arlo_tm_popup_news .closer{
+.arlo_tm_popup_community.opened{display: block;}
+.arlo_tm_popup_community .closer{
 	position: fixed;
 	font-weight: 600;
 	top: 50px;
@@ -1395,14 +932,14 @@ a:hover .hover{
 	color: #000;
 	text-decoration: none;
 }
-.arlo_tm_popup_news .image{
+.arlo_tm_popup_community .image{
 	width: 100%;
 	float: left;
 	position: relative;
 	margin-bottom: 30px;
 }
-.arlo_tm_popup_news .date{margin-bottom: 10px;}
-.arlo_tm_popup_news .date a{
+.arlo_tm_popup_community .date{margin-bottom: 10px;}
+.arlo_tm_popup_community .date a{
 	text-decoration: none;
 	color: #ff214f;
 	border-bottom: 1px solid transparent;
@@ -1413,9 +950,9 @@ a:hover .hover{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_popup_news .date a:hover{border-bottom-color: #ff214f;}
-.arlo_tm_popup_news .image img{min-width: 100%;}
-.arlo_tm_popup_news .image .main{
+.arlo_tm_popup_community .date a:hover{border-bottom-color: #ff214f;}
+.arlo_tm_popup_community .image img{min-width: 100%;}
+.arlo_tm_popup_community .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1425,31 +962,31 @@ a:hover .hover{
 	background-position: center;
 	background-size: cover;
 }
-.arlo_tm_popup_news .larger{display: none;}
-.arlo_tm_popup_news .smaller{display: block;}
-.arlo_tm_popup_news .title{margin-bottom: 30px;}
-.arlo_tm_popup_news .full_des{
+.arlo_tm_popup_community .larger{display: none;}
+.arlo_tm_popup_community .smaller{display: block;}
+.arlo_tm_popup_community .title{margin-bottom: 30px;}
+.arlo_tm_popup_community .full_des{
 	width: 100%;
 	float: left;
 }
-.arlo_tm_popup_news .full_des p{margin-bottom: 20px;}
-.arlo_tm_popup_news .social{
+.arlo_tm_popup_community .full_des p{margin-bottom: 20px;}
+.arlo_tm_popup_community .social{
 	width: 100%;
 	float: left;
 	display: flex;
 	align-items: center;
 }
-.arlo_tm_popup_news .social span{font-weight: 500;}
-.arlo_tm_popup_news .social ul{
+.arlo_tm_popup_community .social span{font-weight: 500;}
+.arlo_tm_popup_community .social ul{
 	margin: 0px;
 	list-style-type: none;
 	padding-left: 20px;
 }
-.arlo_tm_popup_news .social ul li{
+.arlo_tm_popup_community .social ul li{
 	margin: 0px 10px 0px 0px;
 	display: inline-block;
 }
-.arlo_tm_popup_news .social ul li a{
+.arlo_tm_popup_community .social ul li a{
 	text-decoration: none;
 	color: #000;
 	
@@ -1459,22 +996,22 @@ a:hover .hover{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_popup_news .social ul li a:hover{color: #ff214f;}
-.arlo_tm_popup_news .des_serv_list{
+.arlo_tm_popup_community .social ul li a:hover{color: #ff214f;}
+.arlo_tm_popup_community .des_serv_list{
 	width: 100%;
 	float: left;
 	margin-bottom: 18px;
 }
-.arlo_tm_popup_news .des_serv_list ul{
+.arlo_tm_popup_community .des_serv_list ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.arlo_tm_popup_news .des_serv_list ul li{
+.arlo_tm_popup_community .des_serv_list ul li{
 	margin: 0px;
 	position: relative;
 	padding-left: 20px;
 }
-.arlo_tm_popup_news .des_serv_list ul li:before{
+.arlo_tm_popup_community .des_serv_list ul li:before{
 	position: absolute;
 	content: "";
 	width: 5px;
@@ -1485,7 +1022,7 @@ a:hover .hover{
 	top: 50%;
 	transform: translateY(-50%);
 }
-.arlo_tm_popup_news .category{display: none;}
+.arlo_tm_popup_community .category{display: none;}
 
 /*---------------------------------------------------*/
 /*	16) ARLO RTL
@@ -1524,9 +1061,9 @@ body.rtl .arlo_tm_timeline .timeline_inner .svg{left: auto;right: -55px;}
 body.rtl .arlo_tm_timeline .timeline_inner .left{padding-left: 50px;padding-right: 0px;}
 body.rtl .arlo_tm_timeline .timeline_inner .right{padding-left: 50px;padding-right: 0px;}
 body.rtl .arlo_tm_pricing .pricing_inner > ul > li{float: right;}
-body.rtl .arlo_tm_news .news_inner ul li{float: right;}
-body.rtl .arlo_tm_popup_news .des_serv_list ul li:before{left: auto;right: 0px;}
-body.rtl .arlo_tm_popup_news .des_serv_list ul li{padding-left: 0px;padding-right: 20px;}
+body.rtl .community-wrap .community_inner ul li{float: right;}
+body.rtl .arlo_tm_popup_community .des_serv_list ul li:before{left: auto;right: 0px;}
+body.rtl .arlo_tm_popup_community .des_serv_list ul li{padding-left: 0px;padding-right: 20px;}
 body.rtl .arlo_tm_contact .short_list ul li{float: right;}
 body.rtl .arlo_tm_contact .fields ul li{float: right;}
 body.rtl .arlo_tm_contact .empty_notice{text-align: right;}
@@ -1566,19 +1103,19 @@ body.dark .arlo_tm_testimonial .testimonial_bg .overlay{background-color: rgba(0
 body.dark .arlo_tm_pricing{background-color: #191919;}
 body.dark .arlo_tm_pricing .pricing_inner > ul > li > .inner{background-color: #101010;box-shadow: 0px 0px 20px rgba(255,255,255,0);}
 body.dark .arlo_tm_pricing .pricing_inner > ul > li.active > .inner{background-color: #ff214f;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details{background-color: #191919;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details .title a{color: #fff;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details .title a:hover{color: #ff214f;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details .date a{color: #fff;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details .date a:hover{border-bottom-color: #fff;}
-body.dark .arlo_tm_popup_news .closer{color: #fff;}
-body.dark .arlo_tm_news .news_inner ul li .inner .details .date:before{background-color: rgba(255,255,255,.2);}
-body.dark .arlo_tm_popup_news{background-color: #101010;}
-body.dark .arlo_tm_popup_news .social ul li a{color: #fff;}
-body.dark .arlo_tm_popup_news .social ul li a:hover{color: #ff214f;}
-body.dark .arlo_tm_popup_news .des_serv_list ul li:before{background-color: #fff;}
-body.dark .arlo_tm_popup_news .date a{color: #fff;}
-body.dark .arlo_tm_popup_news .date a:hover{border-bottom-color: #fff;}
+body.dark .community-wrap .community_inner ul li .inner .text{background-color: #191919;}
+body.dark .community-wrap .community_inner ul li .inner .text .title a{color: #fff;}
+body.dark .community-wrap .community_inner ul li .inner .text .title a:hover{color: #ff214f;}
+body.dark .community-wrap .community_inner ul li .inner .text .date a{color: #fff;}
+body.dark .community-wrap .community_inner ul li .inner .text .date a:hover{border-bottom-color: #fff;}
+body.dark .arlo_tm_popup_community .closer{color: #fff;}
+body.dark .community-wrap .community_inner ul li .inner .text .date:before{background-color: rgba(255,255,255,.2);}
+body.dark .arlo_tm_popup_community{background-color: #101010;}
+body.dark .arlo_tm_popup_community .social ul li a{color: #fff;}
+body.dark .arlo_tm_popup_community .social ul li a:hover{color: #ff214f;}
+body.dark .arlo_tm_popup_community .des_serv_list ul li:before{background-color: #fff;}
+body.dark .arlo_tm_popup_community .date a{color: #fff;}
+body.dark .arlo_tm_popup_community .date a:hover{border-bottom-color: #fff;}
 body.dark .arlo_tm_contact{background-color: #191919;}
 body.dark .arlo_tm_contact .fields ul li input{background-color: transparent;border: 1px solid rgba(255,255,255,.2);color: #fff;}
 body.dark .arlo_tm_contact .fields .last textarea{background-color: transparent;border: 1px solid rgba(255,255,255,.2);color: #fff;}
@@ -1728,13 +1265,13 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	top: 0px;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
-.arlo_tm_intro_mainpart .main_list ul li .inner .details{
+.arlo_tm_intro_mainpart .main_list ul li .inner .text{
 	width: 100%;
 	float: left;
 	padding: 20px;
 	text-align: center;
 }
-.arlo_tm_intro_mainpart .main_list ul li .inner .details h3{
+.arlo_tm_intro_mainpart .main_list ul li .inner .text h3{
 	font-size: 16px;
 	text-transform: uppercase; 
 	color: #7E7E7E;
@@ -1745,7 +1282,7 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.arlo_tm_intro_mainpart .main_list ul li .inner:hover .details h3{color: #000;}
+.arlo_tm_intro_mainpart .main_list ul li .inner:hover .text h3{color: #000;}
 .arlo_tm_intro_mainpart .main_list ul li .inner .link{
 	position: absolute;
 	top: 0px;
@@ -1804,7 +1341,7 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	.arlo_tm_services .service_inner ul li{width: 50%;}
 	.arlo_tm_pricing .pricing_inner > ul > li{width: 50%;}
 	.arlo_tm_portfolio .portfolio_list ul li{width: 50%;}
-	.arlo_tm_news .news_inner ul li{width: 50%;}
+	.community-wrap .community_inner ul li{width: 50%;}
 }
 @media (max-width: 1040px) {
 	.arlo_tm_leftpart{display: none;}
@@ -1815,7 +1352,7 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	.arlo_tm_skill_wrap .right{padding-left: 0px;width: 100%;}
 	.arlo_tm_testimonial .testimonial_bg .image{display: none;}
 	.arlo_tm_testimonial .testimonial_bg .overlay{background-color: #000;}
-	.arlo_tm_popup_news .closer{top: 10px;right: 10px;}
+	.arlo_tm_popup_community .closer{top: 10px;right: 10px;}
 	body.rtl .arlo_tm_rightpart{padding-right: 0px;}
 	body.rtl .arlo_tm_skill_wrap .skill_wrap_inner .left{padding-left: 0px;}
 	body.rtl .arlo_tm_skill_wrap .right{padding-right: 0px;}
@@ -1838,9 +1375,9 @@ body.dark .arlo_tm_footer{background-color: #101010;}
 	.arlo_tm_timeline .timeline_inner .left, .arlo_tm_timeline .timeline_inner .right{padding-right: 0px;width: 100%;}
 	.arlo_tm_pricing .pricing_inner > ul > li{width: 100%;padding-left: 0px;}
 	.arlo_tm_pricing .pricing_inner > ul{margin: 0px;}
-	.arlo_tm_news .news_inner ul li{width: 100%;padding-left: 0px;}
-	.arlo_tm_news .news_inner ul{margin: 0px;}
-	.arlo_tm_news .news_inner ul li .inner .details{padding: 30px 20px 43px 20px;}
+	.community-wrap .community_inner ul li{width: 100%;padding-left: 0px;}
+	.community-wrap .community_inner ul{margin: 0px;}
+	.community-wrap .community_inner ul li .inner .text{padding: 30px 20px 43px 20px;}
 	.arlo_tm_contact .short_list ul li{width: 100%;padding-left: 0px;margin-bottom: 30px;}
 	.arlo_tm_contact .short_list ul{margin: 0px;}
 	.arlo_tm_contact .fields ul li{width: 100%;padding-left: 0px;}
