@@ -468,17 +468,17 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
   background:rgba(255,255,255,0.6);
 }
 /* 通常時はホバー時の文字を非表示にする */
-a .hover{
+.swim_structure_inner .hover{
 	display: none;
 	}
 	
 	/* ホバー時は通常時の文字を非表示にする */
-a:hover .nomal{
+.swim_structure_inner:hover .nomal{
 	display: none;
 	}
 	
 	/* ホバー時に、ホバー時の文字を表示する */
-a:hover .hover{
+.swim_structure_inner:hover .hover{
 	display: inline;
 	color: black;
 	}
@@ -492,7 +492,12 @@ a:hover .hover{
   justify-content: center;
   align-items: center;
 }
-
+@media (max-width: 767.98px){ 
+	.swim_structure_inner{
+		width: 90%;
+		margin: 10px auto;
+	}
+}
 /*---------------------------------------------------*/
 /*	07) FEATURE
 /*---------------------------------------------------*/
@@ -537,7 +542,7 @@ a:hover .hover{
 	float: left;
 }
 .favorite-inner .nav-item .ocean.active{
-	background-image: url(..//img/img/home.jpg);
+	background-image: url(..//img/img/favorite_ocean.jpg);
 }
 .favorite-inner .nav-item .skill.active{
 	background-color: rgba(0,0,0,.8);
@@ -548,14 +553,14 @@ a:hover .hover{
 	color: black;
 }
 .favorite-inner .nav-item .game.active{
-	background-color: darkgray;
-	color: black;
+	background-color: rgb(0,0,0);
+	color: white;
 }
 
 /*  ocean  */
 
 .tab-content #ocean{
-	background-image: url(..//img/img/home.jpg);
+	background-image: url(..//img/img/favorite_ocean.jpg);
 }
 #ocean h3 {
 	padding: 2rem 0;
@@ -563,7 +568,9 @@ a:hover .hover{
 .achievement-text{
 	padding: 6rem 0;
 }
-
+.achievement-picture img{
+	
+}
 /*  skill  */
 .tab-content #skill{
 	background-color: rgba(0,0,0,.8);
@@ -586,22 +593,9 @@ a:hover .hover{
 	float: left;
 	display: flex;
 }
-.arlo_tm_skill_wrap .skill_wrap_inner .left{
-	width: 50%;
-	padding-right: 50px;
-}
-.arlo_tm_skill_wrap .skill_wrap_inner .left .main_title{
-	width: 100%;
-	margin-bottom: 29px;
-}
-.arlo_tm_skill_wrap .skill_wrap_inner .left .main_title h3{
+.arlo_tm_skill_wrap .skill_wrap_inner .main_title h3{
 	font-size: 20px;
 	color: white;
-}
-.arlo_tm_skill_wrap .right{
-	width: 50%;
-	height: auto;
-	padding-left: 30px;
 }
 .arlo_skill{
 	width: 100%;
@@ -668,14 +662,20 @@ a:hover .hover{
 }
 
 /*  Game */
-.game-inner{
-	background-color: darkgray;
+.tab-content #game{
+	background-image: url(..//img/img/game.jpg);
+	background-size: cover;
+	background-color:rgba(0,0,0,0.5);
+	background-blend-mode:darken;
+}
+.game-inner h3, .game-inner h5{
+	color: white;
 }
 .game-inner .title{
 	padding: 3rem 0 2rem 0;
 }
 .game-inner p{
-	color: black;
+	color: white;
 }
 
 
