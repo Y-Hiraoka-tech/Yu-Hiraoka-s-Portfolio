@@ -209,7 +209,7 @@ img.svg{
 	float: left;
 	margin-bottom: 19px;
 }
-.about .arlo_tm_main_title_holder{margin-bottom: 40px;}
+
 .about .about_short_contact_wrap ul{
 	margin: 0px;
 	list-style-type: none;
@@ -239,6 +239,7 @@ img.svg{
 	height: auto;
 	clear: both;
 	float: left;
+	margin-bottom: 5rem;
 }
 .title_holder h3{
 	font-weight: 700;
