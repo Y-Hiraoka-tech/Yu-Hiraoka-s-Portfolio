@@ -33,120 +33,13 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #6f6f6f;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #6f6f6f;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #6f6f6f;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #6f6f6f;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: #6f6f6f;
-}
 
-::placeholder { /* Most modern browsers support this now. */
-   color: #6f6f6f;
-}
-
-body.dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #fff;
-}
-body.dark :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #fff;
-   opacity:  1;
-}
-body.dark ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #fff;
-   opacity:  1;
-}
-body.dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #fff;
-}
-body.dark ::-ms-input-placeholder { /* Microsoft Edge */
-   color: #fff;
-}
-
-body.dark ::placeholder { /* Most modern browsers support this now. */
-   color: #fff;
-}
-.arlo_tm_all_wrap{
+.nav_section{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.arlo_tm_all_wrap,
-.arlo_tm_all_wrap *{
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
-			box-sizing: border-box; /* Opera/IE 8+ */
-}
-.arlo_tm_all_wrap .wrapper_inner{
-	width: 100%;
-	min-height: 100vh;
-	clear: both;
-	float: left;
-}
-.arlo_tm_section{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.arlo_tm_preloader{
-  position: fixed;
-  background-color: #fff;
-  z-index: 9999999;
-  height: 100%;
-  width: 100%;
-	
-  -webkit-transition: .2s all ease;
-  -o-transition: .2s all ease;
-  transition: .2s all ease;
-  -webkit-transition-delay: .5s;
-  -o-transition-delay: .5s;
-  transition-delay: .5s; }  
-.arlo_tm_preloader .spinner_wrap{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	z-index: 33333;
-}
-.arlo_tm_preloader.loaded {
-    opacity: 0;
-    visibility: hidden;
-}
-.arlo_tm_preloader:before,
-.arlo_tm_preloader:after{
-    content: "";
-    position: absolute;
-    height: 50%;
-    width: 100%;
-    background-color: #000;
-	
-    -webkit-transition: .7s all ease;
-    -o-transition: .7s all ease;
-    transition: .7s all ease;
-}
-.arlo_tm_preloader:before{
-    top: 0;
-    left: 0; 
-}
-.arlo_tm_preloader:after{
-    bottom: 0;
-	left: 0; 
-}
-.arlo_tm_preloader.loaded:before, 
-.arlo_tm_preloader.loaded:after{height: 0%;}
-
 /*---------------------------------------------------*/
 /*	02) Navigation
 /*---------------------------------------------------*/
@@ -192,10 +85,10 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 
 /*---------------------------------------------------*/
-/*	03) ARLO HERO 
+/*	03) HERO 
 /*---------------------------------------------------*/
 
-.arlo_tm_hero_header{
+.hero_header{
 	width: 100%;
 	height: 100vh;
 	clear: both;
@@ -203,7 +96,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	position: relative;
 	overflow: hidden;
 }
-.arlo_tm_hero_header .hero_image{
+.hero_header .hero_image{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -213,7 +106,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	background-size:cover;
 	background-position: center;
 }
-.arlo_tm_hero_header .overlay{
+.hero_header .overlay{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -222,7 +115,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	
 	z-index: 1;
 }
-.arlo_tm_hero_header .hero_content{
+.hero_header .hero_content{
 	width: 100%;
 	height: auto;
 	text-align: center;
@@ -233,51 +126,23 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	padding: 0px 20px;
 	z-index: 3;
 }
-.arlo_tm_hero_header .hero_content .image_wrap{
-	width: 200px;
-    height: 200px;
-    display: inline-block;
-    margin-bottom: 43px;
-	position: relative;
-}
-.arlo_tm_hero_header .hero_content .image_wrap img{border-radius: 100%; }
-.arlo_tm_hero_header .hero_content .image_wrap .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	border-radius: 100%;	
-}
-.arlo_tm_hero_header .hero_content .image_wrap .main:before{
-	position: absolute;
-	content: "";
-	top: -8px;
-	bottom: -8px;
-	left: -8px;
-	right: -8px;
-	border-radius: 100%;
-	background-color:rgba(255,255,255,.08);
-	z-index: -1;
-}
-.arlo_tm_hero_header .hero_content .name_holder{margin-bottom: 9px;}
-.arlo_tm_hero_header .hero_content .name_holder h3{
+.hero_header .hero_content .name_holder{margin-bottom: 9px;}
+.hero_header .hero_content .name_holder h3{
 	color: blue;
 	text-transform: uppercase;
 	font-size: 55px;
 	letter-spacing: 20px;
 	font-family: 'Bangers', cursive;
 }
-.arlo_tm_hero_header .hero_content .name_holder h3 span{color: #ff214f;}
-.arlo_tm_hero_header .hero_content .text_typing p{
+.hero_header .hero_content .name_holder h3 span{
+	color: #ff214f;
+}
+.hero_header .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;
 }
 
-.arlo_tm_hero_header .hero_content .text_typing .arlo_tm_animation_text_word{font-weight: 500;}
+.hero_header .hero_content .text_typing .arlo_tm_animation_text_word{font-weight: 500;}
 .arlo_tm_arrow_wrap{
 	position: absolute;
 	left: 50%;
@@ -318,70 +183,50 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 
 /*---------------------------------------------------*/
-/*	04) ARLO ABOUT
+/*	04) ABOUT
 /*---------------------------------------------------*/
 
-.arlo_tm_about_wrap_all{
+.about_wrap_all{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	padding-top: 70px;
+	background: linear-gradient(125deg, #ffca7a 0%, #ffffff 50%, #ffffff 50%,#6cc5f8 100%);
 }
-.arlo_tm_about{
+.about{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	margin-bottom: 5rem;
 }
-.arlo_tm_about .about_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	display: flex;
-	padding-top: 60px;
-}
 
-.arlo_tm_about .about_short_contact_wrap{
+.about .about_short_contact_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	margin-bottom: 19px;
 }
-.arlo_tm_about .arlo_tm_main_title_holder{margin-bottom: 40px;}
-.arlo_tm_about .about_short_contact_wrap ul{
+.about .arlo_tm_main_title_holder{margin-bottom: 40px;}
+.about .about_short_contact_wrap ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.arlo_tm_about .about_short_contact_wrap ul li{
+.about .about_short_contact_wrap ul li{
 	margin: 0px 0px 10px 0px;
 	position: relative;
 	padding-left: 30px;
 }
-.arlo_tm_about .about_short_contact_wrap ul li:nth-of-type(2n){clear: right;}
-.arlo_tm_about ul li label{
+.about .about_short_contact_wrap ul li:nth-of-type(2n){clear: right;}
+.about ul li label{
 	font-weight: 500;
 	color: #000;
 	min-width: 85px;
 	display: inline-block;
 }
-.arlo_tm_about .about_short_contact_wrap ul li a{
-	text-decoration: none;
-	color: #000;
-    position: relative;
-	border-bottom: 1px solid transparent;
-	
-    -webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.arlo_tm_about .about_short_contact_wrap ul li a:hover{border-bottom-color: #000;}
-.arlo_tm_about .about_short_contact_wrap ul li .svg{
+.about .about_short_contact_wrap ul li .svg{
 	position: absolute;
 	left: 0px;
 	top: 6px;
@@ -389,54 +234,13 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	height: 17px;
 	color: #ff214f;
 }
-.arlo_tm_about .buttons{
+.title_holder{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.arlo_tm_about .buttons ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.arlo_tm_about .buttons ul li{
-	margin: 0px 15px 20px 0px;
-	display: inline-block;
-}
-.arlo_tm_about .buttons ul li a{
-	text-decoration: none;
-	color: #fff;
-	background-color: #ff214f;
-	display: inline-block;
-	padding: 10px 45px;
-	font-family: "Montserrat";
-	position: relative;
-	overflow: hidden;
-}
-.arlo_tm_about .buttons ul li a:before{
-	position: absolute;
-    content: "";
-    top: 0px;
-    height: 100%;
-    left: -25%;
-    width: 0%;
-    background-color: #000;
-    transform: skew(50deg);
-    transition-duration: .6s;
-    z-index: 1;
-}
-.arlo_tm_about .buttons ul li a:hover:before{width: 150%;}
-.arlo_tm_about .buttons ul li span{
-	z-index: 1;
-	position: relative;
-}
-.arlo_title_holder{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-.arlo_title_holder h3{
+.title_holder h3{
 	font-weight: 700;
 	font-size: 35px;
 	padding: 1rem 2rem;
@@ -448,7 +252,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 /*	05) SWIM
 /*---------------------------------------------------*/
 
-#swim.arlo_tm_section{
+#swim.nav_section{
 		background-image:url(..//img/img/swim_section.jpg);
 		background-size: cover;
 		padding-top: 3rem;
@@ -461,7 +265,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .swim-wrap{
   padding: 10rem 0;
-  margin:1.5rem 0 0 1.5rem;
+  margin:0　1.5rem 0 1.5rem;
 }
 .swim-inner{
 	padding-bottom: 1.5rem;
@@ -492,6 +296,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 767.98px){ 
 	.swim_structure_inner{
 		width: 90%;
@@ -549,7 +354,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	color: white;
 }
 .favorite-inner .nav-item .music.active{
-	background-color: #FEDCBD;
+	background-color: rgba(253,126,0,.8);
 	color: black;
 }
 .favorite-inner .nav-item .game.active{
@@ -568,9 +373,6 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 .achievement-text{
 	padding: 6rem 0;
 }
-.achievement-picture img{
-	
-}
 /*  skill  */
 .tab-content #skill{
 	background-color: rgba(0,0,0,.8);
@@ -578,7 +380,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 
 
-.arlo_tm_skill_wrap{
+.skill_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -586,14 +388,13 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	padding: 50px 15px 26px 15px;
 	background-color: rgba(0,0,0,.8);
 }
-.arlo_tm_skill_wrap .skill_wrap_inner{
+.skill_wrap .skill_wrap_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	display: flex;
 }
-.arlo_tm_skill_wrap .skill_wrap_inner .main_title h3{
+.skill_wrap .skill_wrap_inner .main_title h3{
 	font-size: 20px;
 	color: white;
 }
@@ -619,14 +420,12 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	background:#07081f;
 	width:100%;
 	min-width:100%;
-	position:relative;
 	height:8px;
 }
 .skill_inner .background .bar_in{
 	height:100%;
 	background:#333;
 	width:0px;
-	overflow:hidden;
 }
 .skill_inner .background .bar{
 	width:0px;
@@ -709,11 +508,9 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	height: auto;
 	clear: both;
 	float: left;
-	position: relative;
 	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
 .community-wrap .community_inner ul li .inner .image{
-	position: relative;
 	float: left;
 	overflow: hidden;
 	width: 100%;
@@ -744,12 +541,6 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	background-color: rgba(0,0,0,.2);
 	bottom: 0px; 
 }
-.community-wrap .community_inner ul li .inner .text .title{
-	text-decoration: none;
-	color: #000;
-	border-bottom: 1px solid transparent;
-}
-
 .inner .image img{
   transition: all .15s;
 }
@@ -760,16 +551,20 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .community-content{
 	display: none;
+	padding: 1rem 1rem;
+	background-color: #71d6e483;
+	border-radius: 5%;
 }
 .inner:hover .community-content{
 	display: inline-block;
 }
 .under{
 	border-bottom: solid 1px black;
+	font-weight: bold;
 }
 
 /*---------------------------------------------------*/
-/*	08) ARLO CONTACT
+/*	08) CONTACT
 /*---------------------------------------------------*/
 
 .arlo_tm_contact{
@@ -777,7 +572,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: rgba(182, 198, 248, 0.5);
+	background: linear-gradient(#ffffff, #7ad2f2);
 	padding: 5rem 0;
 }
 .arlo_tm_contact .contact_inner{
@@ -823,145 +618,3 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	clear: both;
 	float: left;
 }
-/*---------------------------------------------------*/
-/*	15) ARLO TOTOP
-/*---------------------------------------------------*/
-
-.arlo_tm_footer .top{line-height: 1;}
-.arlo_tm_totop{
-	position: relative;
-	overflow: hidden;
-	background-color: #ff214f;
-    padding: 22px;
-    border-radius: 3px;
-    display: inline-block;
-
-}
-.arlo_tm_totop:after{
-	width: 0px;
-    height: 0px;
-    position: absolute;
-    content: '';
-    border: 5px solid transparent;
-    border-bottom-color: #fff;
-    top: 14px;
-    left: 17px;
-	z-index: 2;
-}
-.community-wrap .community_inner ul li .full_des{display: none;}
-.arlo_tm_popup_community{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background-color: #fff;
-	z-index: 100;
-	display: none;
-}
-.arlo_tm_popup_community .community_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 50px 0px;
-}
-.arlo_tm_popup_community.opened{display: block;}
-.arlo_tm_popup_community .closer{
-	position: fixed;
-	font-weight: 600;
-	top: 50px;
-	right: 50px;
-	z-index: 1;
-	color: #000;
-	text-decoration: none;
-}
-.arlo_tm_popup_community .image{
-	width: 100%;
-	float: left;
-	position: relative;
-	margin-bottom: 30px;
-}
-.arlo_tm_popup_community .date{margin-bottom: 10px;}
-.arlo_tm_popup_community .date a{
-	text-decoration: none;
-	color: #ff214f;
-	border-bottom: 1px solid transparent;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.arlo_tm_popup_community .date a:hover{border-bottom-color: #ff214f;}
-.arlo_tm_popup_community .image img{min-width: 100%;}
-.arlo_tm_popup_community .image .main{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-.arlo_tm_popup_community .larger{display: none;}
-.arlo_tm_popup_community .smaller{display: block;}
-.arlo_tm_popup_community .title{margin-bottom: 30px;}
-.arlo_tm_popup_community .full_des{
-	width: 100%;
-	float: left;
-}
-.arlo_tm_popup_community .full_des p{margin-bottom: 20px;}
-.arlo_tm_popup_community .social{
-	width: 100%;
-	float: left;
-	display: flex;
-	align-items: center;
-}
-.arlo_tm_popup_community .social span{font-weight: 500;}
-.arlo_tm_popup_community .social ul{
-	margin: 0px;
-	list-style-type: none;
-	padding-left: 20px;
-}
-.arlo_tm_popup_community .social ul li{
-	margin: 0px 10px 0px 0px;
-	display: inline-block;
-}
-.arlo_tm_popup_community .social ul li a{
-	text-decoration: none;
-	color: #000;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.arlo_tm_popup_community .social ul li a:hover{color: #ff214f;}
-.arlo_tm_popup_community .des_serv_list{
-	width: 100%;
-	float: left;
-	margin-bottom: 18px;
-}
-.arlo_tm_popup_community .des_serv_list ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.arlo_tm_popup_community .des_serv_list ul li{
-	margin: 0px;
-	position: relative;
-	padding-left: 20px;
-}
-.arlo_tm_popup_community .des_serv_list ul li:before{
-	position: absolute;
-	content: "";
-	width: 5px;
-	height: 5px;
-	background-color: #000;
-	border-radius: 100%;
-	left: 0px;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.arlo_tm_popup_community .category{display: none;}
